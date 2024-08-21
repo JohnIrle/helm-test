@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: johnirle/gobackend
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  name: gobackend-srv
+  type: ClusterIP
+  port: 8080
+
+container:
+  name: gobackend
